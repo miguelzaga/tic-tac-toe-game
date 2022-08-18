@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tic Tac Toe</title>
-</head>
-<body>
-
-  <!-- New game menu start -->
+function App() {
+  return (
+    <main>
+      <h1>Tic Toe Game</h1>
+      {/* <!-- New game menu start -->
 
   Pick player 1's mark
   Remember: X goes first
@@ -41,7 +33,9 @@
   No, cancel
   Yes, restart
 
-  <!-- Game board end -->
+  <!-- Game board end --> */}
+    </main>
+  );
+}
 
-</body>
-</html>
+export default App;

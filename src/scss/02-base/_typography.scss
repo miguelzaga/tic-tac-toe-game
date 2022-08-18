@@ -1,0 +1,6 @@
+@use "./../01-abstracts/" as *;
+
+body {
+  font-family: $font-family;
+  font-size: $font-size
+}

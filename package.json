@@ -1,0 +1,32 @@
+{
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "This is a solution to the Tic Tac Toe challenge on Frontend Mentor.",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelzaga/tic-tac-toe-game.git"
+  },
+  "author": "Miguel Zapata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelzaga/tic-tac-toe-game/issues"
+  },
+  "homepage": "https://github.com/miguelzaga/tic-tac-toe-game#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  }
+}

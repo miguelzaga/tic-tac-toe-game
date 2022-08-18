@@ -1,0 +1,7 @@
+@use "./../01-abstracts/" as *;
+
+html,
+body {
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
