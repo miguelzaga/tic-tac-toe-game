@@ -1,13 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap");
+
 // Colors
-:root {
-  --color-bg: #fff;
-}
+$color-darkNavy: #1a2a33;
+$color-semiDarkNavy: #1f3641;
+$color-silver: #a8bfc9;
+$color-silverHover: #dbe8ed;
+$color-lightBlue: #31c3bd;
+$color-lightBlueHover: #65e9e4;
+$color-lightYellow: #f2b137;
+$color-lightYellowHover: #ffc860;
 
 // Fonts
-$font-family: Arial, Helvetica, sans-serif;
-$font-size: 16px;
+$font-family: "Outfit", sans-serif;
+$font-size: 14px;
 
-// Breakpoints
+// Main Breakpoints
 $sm: 320px;
 $md: 640px;
 $md-lg: 960px;

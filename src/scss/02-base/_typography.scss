@@ -2,5 +2,30 @@
 
 body {
   font-family: $font-family;
-  font-size: $font-size
+  font-size: rem($font-size);
+  letter-spacing: 0.8px;
+}
+
+.heading-l {
+  font-weight: bold;
+  font-size: rem(40px);
+  letter-spacing: 2.5px;
+}
+
+.heading-m {
+  font-weight: bold;
+  font-size: rem(24px);
+  letter-spacing: 1.5px;
+}
+
+.heading-s {
+  font-weight: bold;
+  font-size: rem(20px);
+  letter-spacing: 1.25px;
+}
+
+.heading-xs {
+  font-weight: bold;
+  font-size: rem(16px);
+  letter-spacing: 1px;
 }
