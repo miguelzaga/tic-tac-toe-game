@@ -1,16 +1,10 @@
+import Menu from "./components/Menu";
+
 function App() {
   return (
     <main>
-      <h1>Tic Toe Game</h1>
-      {/* <!-- New game menu start -->
-
-  Pick player 1's mark
-  Remember: X goes first
-
-  New Game (vs CPU)
-  New Game (vs player)
-
-  <!-- New game menu end -->
+      <Menu />
+      {/* 
 
   <!-- Game board start -->
 

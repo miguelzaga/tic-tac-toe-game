@@ -1,6 +1,5 @@
 @use "./../01-abstracts/" as *;
 
-html,
 body {
-  overflow-x: hidden;
+  background-color: $color-darkNavy;
 }
