@@ -1,31 +1,44 @@
 @use "./../01-abstracts/" as *;
 
 body {
+  color: $color-silver;
   font-family: $font-family;
+  font-weight: 500;
   font-size: rem($font-size);
+  line-height: 18px;
   letter-spacing: 0.8px;
 }
 
-.heading-l {
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading-l {
   font-size: rem(40px);
+  line-height: 50px;
   letter-spacing: 2.5px;
 }
 
 .heading-m {
-  font-weight: bold;
   font-size: rem(24px);
+  line-height: 30px;
   letter-spacing: 1.5px;
 }
 
 .heading-s {
-  font-weight: bold;
   font-size: rem(20px);
+  line-height: 25px;
   letter-spacing: 1.25px;
 }
 
 .heading-xs {
-  font-weight: bold;
   font-size: rem(16px);
+  line-height: 20px;
   letter-spacing: 1px;
 }

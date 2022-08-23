@@ -1,1 +1,33 @@
 @use "./../01-abstracts/" as *;
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn-1,
+.btn-2 {
+  border-radius: 15px;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  color: $color-darkNavy;
+  font-size: rem(16px);
+  line-height: 20px;
+  letter-spacing: 1px;
+  @include breakpoint($md) {
+    font-size: rem(20px);
+    line-height: 25px;
+    letter-spacing: 1.25px;
+  }
+}
+
+.btn-1 {
+  background-color: $color-lightYellow;
+  box-shadow: inset 0px -8px 0px #cc8b13;
+}
+
+.btn-2 {
+  background-color: $color-lightBlue;
+  box-shadow: inset 0px -8px 0px #118c87;
+}

@@ -1,0 +1,60 @@
+@use "./../01-abstracts/" as *;
+
+.menu {
+  margin: auto 24px;
+
+  &__logo {
+    max-width: 72px;
+    margin: auto auto 32px;
+  }
+
+  &__main {
+    background-color: $color-semiDarkNavy;
+    padding: 24px 24px 30px;
+    border-radius: 15px;
+    margin-bottom: 32px;
+    box-shadow: inset 0px -8px 0px #10212a;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__controls {
+    background-color: $color-darkNavy;
+    padding: 9px 8px;
+    border-radius: 10px;
+    margin-bottom: 17px;
+    display: flex;
+  }
+
+  &__mark {
+    padding: 11px 0;
+    border-radius: 10px;
+    flex-basis: 50%;
+    background-color: transparent;
+
+    & svg {
+      margin: auto;
+      width: 32px;
+      fill: $color-silver;
+    }
+
+    &--selected {
+      background-color: silver;
+      & svg {
+        fill: $color-darkNavy;
+      }
+    }
+  }
+
+  &__reminder {
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  &__options > :first-child {
+    margin-bottom: 16px;
+  }
+}
