@@ -1,6 +1,6 @@
 import logo from "../assets/logo.svg";
 
-var oIcon = (
+var iconO = (
   <svg
     viewBox="-3 0 70 60"
     width="64"
@@ -11,7 +11,7 @@ var oIcon = (
   </svg>
 );
 
-var xIcon = (
+var iconX = (
   <svg
     viewBox="-3 0 70 60"
     width="64"
@@ -32,8 +32,8 @@ function Menu() {
       <div className="menu__main">
         <h1 className="menu__title heading-xs">Pick player 1's mark</h1>
         <div className="menu__controls">
-          <button className="menu__mark">{xIcon}</button>
-          <button className="menu__mark menu__mark--selected">{oIcon}</button>
+          <button className="menu__mark">{iconX}</button>
+          <button className="menu__mark menu__mark--selected">{iconO}</button>
         </div>
         <p className="menu__reminder">Remember: X goes first</p>
       </div>

@@ -38,13 +38,13 @@
     & svg {
       margin: auto;
       width: 32px;
-      fill: $color-silver;
+      color: $color-silver;
     }
 
     &--selected {
       background-color: silver;
       & svg {
-        fill: $color-darkNavy;
+        color: $color-darkNavy;
       }
     }
   }
