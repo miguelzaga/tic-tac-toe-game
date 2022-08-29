@@ -1,0 +1,40 @@
+@use "./../01-abstracts/" as *;
+
+.game {
+  margin: 24px 24px auto;
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 64px;
+  }
+
+  &__turn {
+    background-color: $color-semiDarkNavy;
+    box-shadow: inset 0px -4px 0px #10212a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+
+    &-icon {
+      width: 16px;
+    }
+  }
+
+  &__logo {
+    max-width: 72px;
+    margin-top: 4px;
+  }
+
+  &__restart {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    margin-left: auto;
+    background-color: $color-silver;
+    box-shadow: inset 0px -4px 0px #6b8997;
+    border-radius: 5px;
+  }
+}

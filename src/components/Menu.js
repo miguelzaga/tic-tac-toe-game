@@ -27,24 +27,26 @@ var iconX = (
 
 function Menu() {
   return (
-    <div className="menu">
-      <img src={logo} alt="" className="menu__logo" />
-      <div className="menu__main">
-        <h1 className="menu__title heading-xs">Pick player 1's mark</h1>
-        <div className="menu__controls">
-          <button className="menu__mark">{iconX}</button>
-          <button className="menu__mark menu__mark--selected">{iconO}</button>
+    <div className="menu__wrapper">
+      <div className="menu">
+        <img src={logo} alt="" className="menu__logo" />
+        <div className="menu__main">
+          <h1 className="menu__title heading-xs">Pick player 1's mark</h1>
+          <div className="menu__controls">
+            <button className="menu__mark">{iconX}</button>
+            <button className="menu__mark menu__mark--selected">{iconO}</button>
+          </div>
+          <p className="menu__reminder">Remember: X goes first</p>
         </div>
-        <p className="menu__reminder">Remember: X goes first</p>
-      </div>
-      <div className="menu__options">
-        <button className="menu__new-game--cpu btn-1">
-          {" "}
-          New Game (vs CPU)
-        </button>
-        <button className="menu__new-game--player btn-2">
-          New Game (vs player)
-        </button>
+        <div className="menu__options">
+          <button className="menu__new-game--cpu btn-1">
+            {" "}
+            New Game (vs CPU)
+          </button>
+          <button className="menu__new-game--player btn-2">
+            New Game (vs player)
+          </button>
+        </div>
       </div>
     </div>
   );

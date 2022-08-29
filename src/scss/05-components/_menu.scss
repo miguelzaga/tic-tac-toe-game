@@ -3,6 +3,13 @@
 .menu {
   margin: auto 24px;
 
+  &__wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__logo {
     max-width: 72px;
     margin: auto auto 32px;
