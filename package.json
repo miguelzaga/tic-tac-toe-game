@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "format:check": "prettier --check \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,scss}\""
   },
   "repository": {
     "type": "git",

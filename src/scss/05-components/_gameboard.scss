@@ -38,4 +38,23 @@
     box-shadow: inset 0px -4px 0px #6b8997;
     border-radius: 5px;
   }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    &-cell {
+	    margin: 0;
+	    padding: 0;
+	    background-color: $color-semiDarkNavy;
+	    box-shadow: inset 0px -8px 0px #10212A;
+	    border-radius: 10px;
+	    padding: 24px 28px 32px;
+
+	    & img {
+		    max-width: 40px;
+	    }
+    }
+  }
 }
