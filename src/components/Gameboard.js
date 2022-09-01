@@ -2,6 +2,7 @@ import logo from "../assets/logo.svg";
 import iconRestart from "../assets/icon-restart.svg";
 import iconO from "../assets/icon-o.svg";
 import iconX from "../assets/icon-x.svg";
+import Cell from "./GameboardCell.js";
 
 var iconXSmall = (
   <svg
@@ -31,7 +32,7 @@ function Gameboard() {
         </button>
       </header>
       <main className="game__grid">
-        <button className="game__grid-cell"></button>
+	  <Cell></Cell>
         <button className="game__grid-cell">
           <img src={iconX} alt="" />
         </button>
