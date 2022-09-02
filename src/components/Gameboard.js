@@ -32,29 +32,15 @@ function Gameboard() {
         </button>
       </header>
       <main className="game__grid">
-	  <Cell></Cell>
-        <button className="game__grid-cell">
-          <img src={iconX} alt="" />
-        </button>
-        <button className="game__grid-cell">
-          <img src={iconO} alt="" />
-        </button>
-        <button className="game__grid-cell">
-          <img src={iconX} alt="" />
-        </button>
-        <button className="game__grid-cell">
-          <img src={iconO} alt="" />
-        </button>
-        <button className="game__grid-cell">
-          <img src={iconX} alt="" />
-        </button>
-        <button className="game__grid-cell"></button>
-        <button className="game__grid-cell">
-          <img src={iconO} alt="" />
-        </button>
-        <button className="game__grid-cell">
-          <img src={iconX} alt="" />
-        </button>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
       </main>
       <footer className="game__score">
         <div className="game__score-cell game__score-cell--1">
