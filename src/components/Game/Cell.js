@@ -1,6 +1,6 @@
 import { useState } from "react";
-import iconO from "../assets/icon-o.svg";
-import iconX from "../assets/icon-x.svg";
+import iconO from "/src/assets/icon-o.svg";
+import iconX from "/src/assets/icon-x.svg";
 
 function Cell() {
   var [state, setState] = useState("");
