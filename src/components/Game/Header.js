@@ -26,12 +26,12 @@ var iconX = (
   </svg>
 );
 
-function Header({ setGame, turn }) {
+function Header({ setGame, mark }) {
   return (
     <div className="game__header">
       <img src={logo} alt="" className="game__logo" />
       <div className="game__turn">
-        <div className="game__turn-icon">{turn == "x" ? iconX : iconO}</div>
+        <div className="game__turn-icon">{mark == "x" ? iconX : iconO}</div>
         <h1 className="game__turn-title">Turn</h1>
       </div>
       <button className="game__restart">

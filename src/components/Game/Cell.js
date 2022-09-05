@@ -2,16 +2,16 @@ import { useState } from "react";
 import iconO from "/src/assets/icon-o.svg";
 import iconX from "/src/assets/icon-x.svg";
 
-function Cell({ turn, toggleTurn }) {
+function Cell({ mark, toggleMark }) {
   var [icon, setIcon] = useState("");
   function takeTurn() {
     if (!icon) {
       selectIcon();
-      toggleTurn();
+      toggleMark();
     }
   }
   function selectIcon() {
-    if (turn == "x") {
+    if (mark == "x") {
       setIcon(iconX);
     } else {
       setIcon(iconO);

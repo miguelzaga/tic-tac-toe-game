@@ -5,21 +5,22 @@ import "./scss/style.scss";
 
 function App() {
   var [game, setGame] = useState(false);
-  var [turn, setTurn] = useState("o");
+  var [mark, setMark] = useState("x");
 
-  function toggleTurn() {
-    if (turn == "x") {
-      setTurn("o");
+  function toggleMark() {
+    if (mark == "x") {
+      setMark("o");
     } else {
-      setTurn("x");
+      setMark("x");
     }
   }
+
   return (
     <main>
       {game ? (
-        <Game setGame={setGame} turn={turn} toggleTurn={toggleTurn} />
+        <Game setGame={setGame} mark={mark} toggleMark={toggleMark} />
       ) : (
-        <Menu turn={turn} setTurn={setTurn} setGame={setGame} />
+        <Menu mark={mark} setMark={setMark} setGame={setGame} />
       )}
     </main>
   );
