@@ -25,7 +25,7 @@ var iconX = (
   </svg>
 );
 
-function Menu({turn, setTurn, setGame}) {
+function Menu({ turn, setTurn, setGame }) {
   return (
     <div className="menu__wrapper">
       <div className="menu">
@@ -33,13 +33,30 @@ function Menu({turn, setTurn, setGame}) {
         <div className="menu__main">
           <h1 className="menu__title heading-xs">Pick player 1's mark</h1>
           <div className="menu__controls">
-            <button onClick={() => setTurn("x")} className={`menu__mark ${turn == "x" ? "menu__mark--selected" : ""}`}>{iconX}</button>
-            <button onClick={() => setTurn("o")} className={`menu__mark ${turn == "o" ? "menu__mark--selected" : ""}`}>{iconO}</button>
+            <button
+              onClick={() => setTurn("x")}
+              className={`menu__mark ${
+                turn == "x" ? "menu__mark--selected" : ""
+              }`}
+            >
+              {iconX}
+            </button>
+            <button
+              onClick={() => setTurn("o")}
+              className={`menu__mark ${
+                turn == "o" ? "menu__mark--selected" : ""
+              }`}
+            >
+              {iconO}
+            </button>
           </div>
           <p className="menu__reminder">Remember: X goes first</p>
         </div>
         <div className="menu__options">
-          <button onClick={() => setGame(true)} className="menu__new-game--cpu btn-1">
+          <button
+            onClick={() => setGame(true)}
+            className="menu__new-game--cpu btn-1"
+          >
             New Game (vs CPU)
           </button>
           <button className="menu__new-game--player btn-2">
