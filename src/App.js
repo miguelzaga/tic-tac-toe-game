@@ -6,10 +6,18 @@ import "./scss/style.scss";
 function App() {
   var [game, setGame] = useState(false);
   var [turn, setTurn] = useState("o");
+
+  function toggleTurn() {
+    if (turn == "x") {
+      setTurn("o");
+    } else {
+      setTurn("x");
+    }
+  }
   return (
     <main>
       {game ? (
-        <Game setGame={setGame} turn={turn} />
+        <Game setGame={setGame} turn={turn} toggleTurn={toggleTurn} />
       ) : (
         <Menu turn={turn} setTurn={setTurn} setGame={setGame} />
       )}

@@ -53,13 +53,13 @@ function Menu({ turn, setTurn, setGame }) {
           <p className="menu__reminder">Remember: X goes first</p>
         </div>
         <div className="menu__options">
-          <button
-            onClick={() => setGame(true)}
-            className="menu__new-game--cpu btn-1"
-          >
+          <button className="menu__new-game--cpu btn-1">
             New Game (vs CPU)
           </button>
-          <button className="menu__new-game--player btn-2">
+          <button
+            onClick={() => setGame(true)}
+            className="menu__new-game--player btn-2"
+          >
             New Game (vs player)
           </button>
         </div>

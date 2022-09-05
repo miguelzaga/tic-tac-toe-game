@@ -5,11 +5,11 @@ import Grid from "./Game/Grid.js";
 import Header from "./Game/Header.js";
 import Score from "./Game/Score.js";
 
-function Game({ setGame, turn }) {
+function Game({ setGame, turn, toggleTurn }) {
   return (
     <div className="game">
       <Header setGame={setGame} turn={turn} />
-      <Grid turn={turn} />
+      <Grid turn={turn} toggleTurn={toggleTurn} />
       <Score />
     </div>
   );
