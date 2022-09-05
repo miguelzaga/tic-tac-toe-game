@@ -5,14 +5,13 @@ import Grid from "./Game/Grid.js";
 import Header from "./Game/Header.js";
 import Score from "./Game/Score.js";
 
-function Game({ goMenu }) {
+function Game({ setGame}) {
   return (
     <div className="game">
-      <Header goMenu={goMenu} />
+      <Header setGame={setGame} />
       <Grid />
       <Score />
     </div>
-  );
-}
+  ); }
 
 export default Game;
