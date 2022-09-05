@@ -26,7 +26,7 @@ var iconX = (
   </svg>
 );
 
-function Header({ setGame, mark }) {
+function Header({ setGame, mark, restart }) {
   return (
     <div className="game__header">
       <img src={logo} alt="" className="game__logo" />
@@ -34,13 +34,8 @@ function Header({ setGame, mark }) {
         <div className="game__turn-icon">{mark == "x" ? iconX : iconO}</div>
         <h1 className="game__turn-title">Turn</h1>
       </div>
-      <button className="game__restart">
-        <img
-          onClick={() => setGame(false)}
-          src={iconRestart}
-          alt=""
-          className="game__restart-logo"
-        />
+      <button onClick={restart} className="game__restart">
+        <img src={iconRestart} alt="" className="game__restart-logo" />
       </button>
     </div>
   );

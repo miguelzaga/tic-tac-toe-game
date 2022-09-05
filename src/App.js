@@ -15,10 +15,20 @@ function App() {
     }
   }
 
+  function restart() {
+    setGame(false);
+    setMark("x");
+  }
+
   return (
     <main>
       {game ? (
-        <Game setGame={setGame} mark={mark} toggleMark={toggleMark} />
+        <Game
+          setGame={setGame}
+          mark={mark}
+          toggleMark={toggleMark}
+          restart={restart}
+        />
       ) : (
         <Menu mark={mark} setMark={setMark} setGame={setGame} />
       )}

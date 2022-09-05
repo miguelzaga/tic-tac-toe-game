@@ -6,7 +6,7 @@ import Grid from "./Game/Grid.js";
 import Header from "./Game/Header.js";
 import Score from "./Game/Score.js";
 
-function Game({ setGame, mark, toggleMark }) {
+function Game({ setGame, mark, toggleMark, restart }) {
   [player1Moves, setPlayer1Moves] = useState([]);
   [player2Moves, setPlayer2Moves] = useState([]);
 
@@ -20,7 +20,7 @@ function Game({ setGame, mark, toggleMark }) {
 
   return (
     <div className="game">
-      <Header setGame={setGame} mark={mark} />
+      <Header setGame={setGame} mark={mark} restart={restart} />
       <Grid mark={mark} toggleMark={toggleMark} />
       <Score />
     </div>
