@@ -26,7 +26,7 @@ var iconX = (
   </svg>
 );
 
-function Header() {
+function Header({ goMenu }) {
   return (
     <div className="game__header">
       <img src={logo} alt="" className="game__logo" />
@@ -35,7 +35,12 @@ function Header() {
         <h1 className="game__turn-title">Turn</h1>
       </div>
       <button className="game__restart">
-        <img src={iconRestart} alt="" className="game__restart-logo" />
+        <img
+          onClick={goMenu}
+          src={iconRestart}
+          alt=""
+          className="game__restart-logo"
+        />
       </button>
     </div>
   );

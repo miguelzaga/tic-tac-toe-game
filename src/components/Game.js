@@ -5,10 +5,10 @@ import Grid from "./Game/Grid.js";
 import Header from "./Game/Header.js";
 import Score from "./Game/Score.js";
 
-function Game() {
+function Game({ goMenu }) {
   return (
     <div className="game">
-      <Header />
+      <Header goMenu={goMenu} />
       <Grid />
       <Score />
     </div>

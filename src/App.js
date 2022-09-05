@@ -5,7 +5,10 @@ import "./scss/style.scss";
 
 function App() {
   var [game, setGame] = useState(true);
-  return <main>{game ? <Game /> : <Menu />}</main>;
+  function goMenu() {
+    setGame(false);
+  }
+  return <main>{game ? <Game goMenu={goMenu} /> : <Menu />}</main>;
 }
 
 export default App;
