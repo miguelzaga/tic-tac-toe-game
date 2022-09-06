@@ -6,6 +6,19 @@ import "./scss/style.scss";
 function App() {
   var [game, setGame] = useState(false);
   var [mark, setMark] = useState("x");
+  var [turn, setTurn] = useState(2); // By default the player 2 starts (with X)
+	function endTurn(){
+		toggleMark();
+		toggleTurn();
+	}
+
+function toggleTurn(){
+    if (turn == 2) {
+      setTurn(1);
+    } else {
+      setTurn(2);
+    }
+  }
 
   function toggleMark() {
     if (mark == "x") {
@@ -26,7 +39,7 @@ function App() {
         <Game
           setGame={setGame}
           mark={mark}
-          toggleMark={toggleMark}
+          endTurn={endTurn}
           restart={restart}
         />
       ) : (

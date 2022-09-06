@@ -1,6 +1,6 @@
 import Cell from "./Cell";
 
-function Grid({ mark, toggleMark }) {
+function Grid({ mark, endTurn }) {
   var cells = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div className="game__grid">
@@ -10,7 +10,7 @@ function Grid({ mark, toggleMark }) {
             key={`cell-${num}`}
             num={num}
             mark={mark}
-            toggleMark={toggleMark}
+            endTurn={endTurn}
           ></Cell>
         );
       })}

@@ -2,12 +2,12 @@ import { useState } from "react";
 import iconO from "/src/assets/icon-o.svg";
 import iconX from "/src/assets/icon-x.svg";
 
-function Cell({ mark, toggleMark }) {
+function Cell({ mark, endTurn, num }) {
   var [icon, setIcon] = useState("");
   function takeTurn() {
     if (!icon) {
       selectIcon();
-      toggleMark();
+      endTurn();
     }
   }
   function selectIcon() {
