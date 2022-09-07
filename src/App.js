@@ -7,12 +7,12 @@ function App() {
   var [game, setGame] = useState(false);
   var [mark, setMark] = useState("x");
   var [turn, setTurn] = useState(2); // By default the player 2 starts (with X)
-	function endTurn(){
-		toggleMark();
-		toggleTurn();
-	}
+  function endTurn() {
+    toggleMark();
+    toggleTurn();
+  }
 
-function toggleTurn(){
+  function toggleTurn() {
     if (turn == 2) {
       setTurn(1);
     } else {
@@ -39,6 +39,7 @@ function toggleTurn(){
         <Game
           setGame={setGame}
           mark={mark}
+          turn={turn}
           endTurn={endTurn}
           restart={restart}
         />

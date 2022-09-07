@@ -1,6 +1,6 @@
 import Cell from "./Cell";
 
-function Grid({ mark, endTurn }) {
+function Grid({ mark, endTurn, addPlayerMove }) {
   var cells = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div className="game__grid">
@@ -11,6 +11,7 @@ function Grid({ mark, endTurn }) {
             num={num}
             mark={mark}
             endTurn={endTurn}
+            addPlayerMove={addPlayerMove}
           ></Cell>
         );
       })}
