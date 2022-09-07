@@ -1,7 +1,4 @@
 import { useState } from "react";
-import iconO from "../assets/icon-o.svg";
-import iconX from "../assets/icon-x.svg";
-import Cell from "./Game/Cell.js";
 import Grid from "./Game/Grid.js";
 import Header from "./Game/Header.js";
 import Score from "./Game/Score.js";
@@ -26,18 +23,6 @@ function Game({ setGame, mark, turn, endTurn, restart }) {
         return moves.includes(winnerMove);
       });
     });
-  }
-
-  function addPlayerMove(num) {
-    if (turn == 1) {
-      let newMoves1 = [...player1Moves, num];
-      setPlayer1Moves(newMoves1);
-      console.log(newMoves1, didPlayerWin(newMoves1));
-    } else {
-      let newMoves2 = [...player2Moves, num];
-      setPlayer2Moves(newMoves2);
-      console.log(newMoves2, didPlayerWin(newMoves2));
-    }
   }
 
   return (

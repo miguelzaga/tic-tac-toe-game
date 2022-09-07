@@ -10,21 +10,21 @@ function App() {
   function endTurn() {
     toggleMark();
     toggleTurn();
-  }
 
-  function toggleTurn() {
-    if (turn == 2) {
-      setTurn(1);
-    } else {
-      setTurn(2);
+    function toggleTurn() {
+      if (turn == 2) {
+        setTurn(1);
+      } else {
+        setTurn(2);
+      }
     }
-  }
 
-  function toggleMark() {
-    if (mark == "x") {
-      setMark("o");
-    } else {
-      setMark("x");
+    function toggleMark() {
+      if (mark == "x") {
+        setMark("o");
+      } else {
+        setMark("x");
+      }
     }
   }
 
