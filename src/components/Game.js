@@ -7,7 +7,7 @@ import Final from "./Final.js";
 function Game({ setGame, mark, turn, endTurn, restart }) {
   var [player1Moves, setPlayer1Moves] = useState([]);
   var [player2Moves, setPlayer2Moves] = useState([]);
-  var [isGameOver, setIsGameOver] = useState(false);
+  var [isGameOver, setIsGameOver] = useState(true);
 
   function addPlayerMove(num) {
     if (turn == 1) {
