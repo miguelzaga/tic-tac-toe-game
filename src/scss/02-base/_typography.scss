@@ -20,9 +20,14 @@ button {
 }
 
 .heading-l {
-  font-size: rem(40px);
-  line-height: 50px;
-  letter-spacing: 2.5px;
+  font-size: rem(24px);
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  @include breakpoint($md) {
+    font-size: rem(40px);
+    line-height: 50px;
+    letter-spacing: 2.5px;
+  }
 }
 
 .heading-m {
@@ -32,9 +37,14 @@ button {
 }
 
 .heading-s {
-  font-size: rem(20px);
-  line-height: 25px;
-  letter-spacing: 1.25px;
+  font-size: rem(16px);
+  line-height: 20px;
+  letter-spacing: 1px;
+  @include breakpoint($md) {
+    font-size: rem(20px);
+    line-height: 25px;
+    letter-spacing: 1.25px;
+  }
 }
 
 .heading-xs {

@@ -3,23 +3,16 @@
 button {
   border: none;
   cursor: pointer;
+  color: $color-darkNavy;
 }
 
+// Primary buttons
 .btn-1,
 .btn-2 {
   border-radius: 15px;
-  width: 100%;
   padding-top: 17px;
   padding-bottom: 25px;
-  color: $color-darkNavy;
-  font-size: rem(16px);
-  line-height: 20px;
-  letter-spacing: 1px;
-  @include breakpoint($md) {
-    font-size: rem(20px);
-    line-height: 25px;
-    letter-spacing: 1.25px;
-  }
+  width: 100%;
 }
 
 .btn-1 {
@@ -30,4 +23,21 @@ button {
 .btn-2 {
   background-color: $color-lightBlue;
   box-shadow: inset 0px -8px 0px #118c87;
+}
+
+// Secondary buttons
+.btn-sec-1,
+.btn-sec-2 {
+	border-radius: 10px;
+	padding: 15px 17px 17px 16px;
+}
+
+.btn-sec-1 {
+  background-color: $color-lightYellow;
+  box-shadow: inset 0px -4px 0px #cc8b13;
+}
+
+.btn-sec-2 {
+  background-color: $color-silver;
+  box-shadow: inset 0px -4px 0px #6b8997;
 }

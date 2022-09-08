@@ -1,27 +1,52 @@
 @use "./../01-abstracts/" as *;
 
 .final {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
-	&__container {
-		background-color: $color-semiDarkNavy;
-		width: 100%;
-		z-index: 1;
-	}
+  &__container {
+    background-color: $color-semiDarkNavy;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
 
-	&__bg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #000;
-	opacity: 0.5;
-}
+  &__result {
+	  margin-bottom: 16px;
+  }
+
+  &__mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  &__logo {
+    max-width: 30px;
+  }
+  
+  &__controls {
+	  display: flex;
+	  justify-content: center;
+	  gap: 16px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+  }
 }
